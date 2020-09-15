@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #292930;
+  --secondary-color: #fff;
+  --bg-color: #e0e9f1;
+  --hover-color: #232327;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Kulim Park', sans-serif;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.invoice-header a {
+  text-decoration: none !important;
+}
+
+.invoice-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.invoice-header p,
+.content .billed-to p,
+.content .voucher-details p  {
+  margin-bottom: 0rem;
+}
+
+.invoice-header .contact p,
+.invoice-header .address p{
+  font-size: 1rem;
+}
+
+.content {
+  background-color: var(--secondary-color);
+}
+
+.content .invoice-total p {
+  font-size: 2.6rem;
+  color: var(--primary-color);
+}
+
+.voucher-details table thead th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.75rem !important;
+}
+
+.invoice-footer .table-borderless tbody+tbody,
+.invoice-footer .table-borderless td,
+.invoice-footer .table-borderless th,
+.invoice-footer .table-borderless thead th {
+  padding: 0.2rem !important;
+}
+
+footer .coded-by img {
+  width: 120px;
+}
+
+@media (max-width: 992px) {
+  .invoice-header h1 {
+    font-size: 2rem;
+  }
+
+  .invoice-header .contact p,
+  .invoice-header .address p {
+    font-size: 0.8rem;
+  }
+
+  .content .invoice-total p {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+        <header class="invoice-header text-md-left text-center p-lg-5 p-md-5 p-4"><!-- Header STARTS -->
+          <div class="row">
+            <div class="col-md-5 col-sm-12 align-self-center">
+              <h1 class="text-uppercase">Invoice</h1>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-right text-center mb-md-0 mb-3">
+                  <div class="contact">
+                    <p>444-7895-9874</p>
+                    <p>invoice@gmail.com</p>
+                    <p><a href="#">www.website.com</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-right text-center">
+                  <div class="address">
+                    <p>Address</p>
+                    <p>City, State, Country</p>
+                    <p>Zip Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header><!-- Header ENDS -->
+        <div class="content p-lg-5 p-md-5 p-4"><!-- Content STARTS -->
+          <div class="row">
+            <div class="col-md-8 text-md-left text-center">
+              <div class="row">
+                <div class="col-md-6 billed-to mb-md-0 mb-3">
+                  <small class="text-muted">Billed to</small>
+                  <p>Client</p>
+                  <p>Client's Address</p>
+                  <p>City, State, Country</p>
+                  <p>Zip Code</p>
+                </div>
+                <div class="col-md-6">
+                  <div class="invoice-num">
+                    <small class="text-muted">Invoice Number</small>
+                    <p>0000000</p>
+                  </div>
+                  <div class="invoice-date">
+                    <small class="text-muted">Date Of Issue</small>
+                    <p>01 Jan, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-md-right text-center mb-md-0 mt-3">
+              <div class="invoice-total">
+                <small class="text-muted">Invoice Total</small>
+                <p>$3120.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-md-5 mt-4"><!-- Details STARTS -->
+            <div class="col-md-12">
+              <div class="voucher-details">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Description</th>
+                        <th>Unit Cost</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p>Your item name</p>
+                          <small class="text-muted">Item description goes here</small>
+                        </td>
+                        <td><p>$1000</p></td>
+                        <td><p>2</p></td>
+                        <td><p>$2000</p></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Your item name</p>
+                          <small class="text-muted">Item description goes here</small>
+                        </td>
+                        <td><p>$200</p></td>
+                        <td><p>5</p></td>
+                        <td><p>$1000</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div><!-- Details ENDS -->
+          <div class="row invoice-footer">
+            <div class="col-md-4 ml-auto text-right">
+              <div class="table-responsive">
+                <table class="table table-borderless mb-0">
+                  <tr>
+                    <th><small class="text-muted">Subtotal</small></th>
+                    <td>$3000</td>
+                  </tr>
+                  <tr>
+                    <th><small class="text-muted">Tax</small></th>
+                    <td>$120</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div><!-- Content ENDS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer fixed-bottom py-2 text-right">
+    <div class="coded-by">
+      <a href="https://github.com/hassibmoddasser" target="_blank">
+        <img src="img/coded-by-black.png" alt="Coded by Hassib Moddasser" class="mr-4 mb-2">
+      </a>
+    </div>
+  </footer>
+  
+  <!-- App JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
